@@ -25,4 +25,7 @@ class Triangle
     end
 
     class TraingeError < StandardError
+      def message
+        "All lengths must be greater than 0."
+      end
 end
