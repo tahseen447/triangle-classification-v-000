@@ -29,7 +29,7 @@ class Triangle
       @a > 0 && @b >0 && @c >=0 && @a+@b >@c && @b+@c > @a && @a+@c > @b
       end
 
-    class TraingeError < StandardError
+    class TriangleError < StandardError
       def message
         "All lengths must be greater than 0."
       end
