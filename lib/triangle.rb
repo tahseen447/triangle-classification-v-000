@@ -8,7 +8,7 @@ class Triangle
     end
 
     def kind
-      if valid_traingle? == false
+      if !valid_traingle?
       #  begin
           raise TriangleError
         #rescue TraingeError => error
