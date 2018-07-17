@@ -28,4 +28,5 @@ class Triangle
       def message
         "All lengths must be greater than 0."
       end
+    end
 end
