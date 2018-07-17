@@ -25,10 +25,8 @@ class Triangle
     end
 
     def valid_traingle?
-      if @a >0 && @b >0 && @c >0 
-        if @a+@b > @c 
-
-        end
+      @a> 0 && @b >0 && @c >0 && @a+@b >@c && @b+@c > @a && @a+@c > @b
+      end
     class TraingeError < StandardError
       def message
         "All lengths must be greater than 0."
