@@ -23,4 +23,6 @@ class Triangle
           :scalene
       end
     end
+
+    class TraingeError < StandardError
 end
