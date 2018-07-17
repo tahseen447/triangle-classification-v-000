@@ -9,11 +9,11 @@ class Triangle
 
     def kind
       if !valid_traingle?
-        begin
+      #  begin
           raise TriangleError
         #rescue TraingeError => error
         #  puts error.message
-        end
+      #  end
       else
         if @a == @b && @b == @c
           :equilateral
