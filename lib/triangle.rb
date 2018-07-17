@@ -8,11 +8,19 @@ class Triangle
     end
 
     def kind
-      if @a == @b && @b == @c
-        :equilateral
-      elsif @a==@b || @b==@c || @a==@case
-        :isosceles
+      if @a < 0 || @b <0 || @c <0
+        begin
+          raise TriangleError
+        rescue TraingeError => error
+          puts error.message
+        end
       else
-        :scalene
+        if @a == @b && @b == @c
+          :equilateral
+        elsif @a==@b || @b==@c || @a==@case
+          :isosceles
+        else
+          :scalene
       end
+    end
 end
