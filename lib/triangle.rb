@@ -1,3 +1,3 @@
 class Triangle
-  # write code here
+  # write code here  
 end
